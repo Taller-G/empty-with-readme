@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page | Nombre del Producto o Servicio</title>
+    <meta name="description" content="Descripción atractiva y optimizada para SEO sobre lo que ofrece tu página.">
+    <!-- Enlace a tu archivo de estilos CSS externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. CABECERA (Header) -->
+    <header class="main-header">
+        <div class="container header-flex">
+            <div class="logo">
+                <a href="#"><strong>TuMarca</strong></a>
+            </div>
+            <!-- Botón directo de acción rápido en lugar de menú de navegación extenso -->
+            <div class="header-cta">
+                <a href="#registro" class="btn btn-secondary">Comenzar</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- 2. SECCIÓN PRINCIPAL (Hero Section) -->
+        <section class="hero-section">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <h1>La solución definitiva para resolver tu principal problema</h1>
+                    <p>Explica de forma clara y directa el mayor beneficio de tu producto o servicio en una o dos líneas impactantes.</p>
+                    <a href="#registro" class="btn btn-primary">Prueba Gratis Ahora</a>
+                </div>
+                <div class="hero-image">
+                    <!-- Imagen representativa de tu producto o servicio -->
+                    <img src="images/hero-dashboard.png" alt="Vista previa de la plataforma">
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. CARACTERÍSTICAS / BENEFICIOS (Features) -->
+        <section class="features-section">
+            <div class="container">
+                <h2>¿Por qué elegirnos?</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <h3>Beneficio 1</h3>
+                        <p>Describe cómo esta característica le ahorra tiempo o dinero al usuario.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Beneficio 2</h3>
+                        <p>Explica un factor diferenciador clave frente a tus competidores directos.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Beneficio 3</h3>
+                        <p>Menciona la facilidad de uso, soporte técnico o integración inmediata.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. PRUEBA SOCIAL / TESTIMONIOS (Social Proof) -->
+        <section class="testimonials-section">
+            <div class="container">
+                <h2>Lo que dicen nuestros clientes</h2>
+                <div class="testimonials-grid">
+                    <blockquote class="testimonial-item">
+                        <p>"Este producto cambió por completo la forma en que gestionamos nuestro flujo de trabajo diario. ¡Altamente recomendado!"</p>
+                        <cite>— Carlos Mendoza, Director de Operaciones</cite>
+                    </blockquote>
+                    <blockquote class="testimonial-item">
+                        <p>"La atención al cliente es excepcional y los resultados se notaron desde la primera semana de implementación."</p>
+                        <cite>— Laura Gómez, Emprendedora</cite>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. FORMULARIO DE CONVERSIÓN (CTA / Lead Capture) -->
+        <section id="registro" class="cta-section">
+            <div class="container form-container">
+                <h2>Empieza a transformar tu negocio hoy</h2>
+                <p>Regístrate en menos de 2 minutos. No requerimos tarjeta de crédito.</p>
+                
+                <!-- El atributo action conectará con tu script de procesamiento de datos -->
+                <form action="procesar_registro.php" method="POST" class="landing-form">
+                    <div class="form-group">
+                        <label for="nombre">Nombre completo</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" name="email" placeholder="Ej. juan@correo.com" required>
+                    </div>
+                    <button type="submit" class="btn btn-submit">Crear Mi Cuenta</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- 6. PIE DE PÁGINA (Footer) -->
+    <footer class="main-footer">
+        <div class="container footer-flex">
+            <p>&copy; 2026 TuMarca. Todos los derechos reservados.</p>
+            <nav class="footer-links">
+                <a href="#">Política de Privacidad</a>
+                <a href="#">Términos de Servicio</a>
+                <a href="#">Contacto</a>
+            </nav>
+        </div>
+    </footer>
+
+</body>
+</html>
